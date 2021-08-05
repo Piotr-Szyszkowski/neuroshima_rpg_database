@@ -1,11 +1,10 @@
 const express = require("express");
-const { professionsRouter } = require("./professions-router");
+const sendAllEndpoints = require("../controllers/api-controller");
+const professionsRouter = require("./professions-router");
 const apiRouter = express.Router();
 
-apiRouter.route("/").get(() => {
-  console.log("GET req received - api");
-});
+apiRouter.get("/", sendAllEndpoints);
 
 apiRouter.use("/professions", professionsRouter);
 
-module.exports = { apiRouter };
+module.exports = apiRouter;
