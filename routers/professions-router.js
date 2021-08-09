@@ -6,6 +6,6 @@ const {
 const professionsRouter = express.Router();
 
 professionsRouter.route("/").get(getAllProffessions);
-professionsRouter.route("/:prof_id").get(getProfessionById);
+// professionsRouter.route("/:prof_id").get(getProfessionById);
 
 module.exports = professionsRouter;

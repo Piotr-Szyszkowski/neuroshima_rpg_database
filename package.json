@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "test": "jest",
     "check": "psql -f ./db/check.sql > neuro.txt",
     "dev": "nodemon listen.js",
     "setup-dbs": "psql -f ./db/setup.sql",
@@ -11,5 +12,8 @@
     "nodemon": "^2.0.12",
     "pg": "^8.6.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "supertest": "^6.1.4"
+  }
 }

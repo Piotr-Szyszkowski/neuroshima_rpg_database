@@ -9,11 +9,11 @@ const getAllProffessions = (req, res, next) => {
   });
 };
 
-const getProfessionById = (req, res, next) => {
-  const { prof_id } = req.params;
-  selectProfessionById(prof_id).then((prof) => {
-    res.status(200).send({ prof });
-  });
-};
+// const getProfessionById = (req, res, next) => {
+//   const { prof_id } = req.params;
+//   selectProfessionById(prof_id).then((prof) => {
+//     res.status(200).send({ prof });
+//   });
+// };
 
-module.exports = { getAllProffessions, getProfessionById };
+module.exports = { getAllProffessions };
