@@ -1,4 +1,4 @@
-const proffessions = [
+module.exports = [
   {
     profession_name: "Chemist",
     catch_phrase:

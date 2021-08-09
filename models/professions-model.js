@@ -1,4 +1,4 @@
-const { db } = require("../db/connection");
+const db = require("../db/connection");
 
 const selectAllProfessions = () => {
   return db.query("SELECT * FROM professions;").then((result) => {

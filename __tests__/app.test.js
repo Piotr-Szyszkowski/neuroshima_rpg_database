@@ -1,7 +1,13 @@
-const { TestWatcher } = require("jest");
+const db = require("../db/connection");
 const request = require("supertest");
 const allEndpoints = require("../all-endpoints");
 const app = require("../app");
+
+afterAll(() => {
+  db.end();
+});
+
+console.log(process.env);
 
 describe(`GET /api`, () => {
   it("responds with status:200 and a JSON object describing all endpoints", () => {

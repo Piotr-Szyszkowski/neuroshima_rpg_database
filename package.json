@@ -3,6 +3,7 @@
     "test": "jest",
     "check": "psql -f ./db/check.sql > neuro.txt",
     "dev": "nodemon listen.js",
+    "setup-db-and-seed": "psql -f ./db/setup.sql && psql -f ./db/seeds/temporary-cheat-seed.sql",
     "setup-dbs": "psql -f ./db/setup.sql",
     "seed": "psql -f ./db/seeds/temporary-cheat-seed.sql"
   },
