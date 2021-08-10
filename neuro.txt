@@ -1,4 +1,4 @@
-You are now connected to database "neuroshima" as user "postgres".
+You are now connected to database "neuroshima_test" as user "postgres".
  profession_id | profession_name |                               catch_phrase                                |                          profession_description                          |      trait_1_name      |  trait_2_name   
 ---------------+-----------------+---------------------------------------------------------------------------+--------------------------------------------------------------------------+------------------------+-----------------
              1 | Chemist         | Plug your ears, after mixing these substances there may be a little bang. | Second to the mechanic, they are the most valued proffession these days. | It tastes like arsenic | Pharmacist

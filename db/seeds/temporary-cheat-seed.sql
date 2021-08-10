@@ -1,4 +1,4 @@
-\c neuroshima;
+\c neuroshima_test;
 
 CREATE TABLE professions (
     profession_id SERIAL PRIMARY KEY,

@@ -7,8 +7,6 @@ afterAll(() => {
   db.end();
 });
 
-console.log(process.env);
-
 describe(`GET /api`, () => {
   it("responds with status:200 and a JSON object describing all endpoints", () => {
     return request(app)
@@ -17,5 +15,11 @@ describe(`GET /api`, () => {
       .then((response) => {
         expect(response.body.endpoints).toEqual(allEndpoints);
       });
+  });
+});
+
+describe(`GET /api/professions`, () => {
+  it("responds with status:200 and an array of profession objects", () => {
+    return request(app).get(`/api/professions`).expect(200);
   });
 });
